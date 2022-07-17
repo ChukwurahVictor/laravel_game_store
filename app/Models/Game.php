@@ -9,5 +9,7 @@ class Game extends Model
 {
     use HasFactory;
 
+    protected $table = 'games';
+
     protected $fillable = ['name', 'price'];
 }

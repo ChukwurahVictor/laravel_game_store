@@ -3,3 +3,6 @@
    RewriteCond %{REQUEST_URI} !^public
    RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
+
+heroku config:set APP_DEBUG=true
+heroku config:set APP_KEY=RandomString
