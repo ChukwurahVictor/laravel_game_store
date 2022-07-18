@@ -5,6 +5,9 @@
   .uper {
     margin-top: 40px;
   }
+  .add-button {
+    float: right;
+  }
 </style>
 <div class="uper">
   @if(session()->get('success'))
@@ -12,6 +15,7 @@
       {{ session()->get('success') }}  
     </div><br />
   @endif
+  <div class="add-button"><a href="{{ route('games.create')}}" class="btn btn-primary">Add Game</a></div>
   <table class="table table-striped">
     <thead>
         <tr>
